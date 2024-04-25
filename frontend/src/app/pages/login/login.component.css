@@ -1,0 +1,20 @@
+.top{
+  width:352px;
+   height:200px;
+   background-image: url(../../../assets/IMAGES/f1.jpg);
+
+}
+.wrap
+{
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  padding-right:35px;
+
+}
+.ftco-section{
+
+  padding-bottom: 100px;
+}
+.error-list{
+  color: red;
+  font-size: small;
+}

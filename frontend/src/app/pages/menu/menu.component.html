@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="top1">
+
+  <div class="searchBox1">
+    <app-search></app-search>
+  </div>
+
+
+<div  class="container">
+  <div  class="row">
+
+    <div  *ngFor="let food of foods" class="col-md-3" id="repeat">
+      <div routerLink="/food/{{food.id}}" class="card">
+        <img src="{{food.imageUrl}}" alt="{{food.name}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"> {{food.name}}</h5>
+          <p class="card-text"> {{food.price | currency}} </p>
+          <div class="product-item-footer">
+            <div class="product-item-footer">
+              <div class="origins">
+                <span *ngFor="let origin of food.origins">
+                  {{origin}}
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<app-footer></app-footer>

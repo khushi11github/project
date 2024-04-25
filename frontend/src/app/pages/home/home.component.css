@@ -1,0 +1,93 @@
+.container{
+  margin-top: 0px;
+}
+.container2{
+
+  position: relative;
+}
+
+.container2 img{
+ margin-top: 70px;
+  height:500px;
+  width:600px;
+
+opacity:0.9;
+}
+.container{
+  display:flex;
+  flex-direction:row;
+}
+.c2{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ margin-left: 30px;
+}
+.text{
+
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  background: linear-gradient(
+  to right,
+  hsl(0, 3%, 31%) 0% ,
+  hsl(0, 56%, 4%) 10%,
+  hsl(0, 4%, 45%) 20%
+
+  );
+ -webkit-background-clip: text ;
+-webkit-text-fill-color: transparent;
+animation: shine 2s infinite linear;
+padding:60px;
+
+}
+@keyframes shine{
+  0%{
+    background-position: 0;
+  }
+  60%{
+    background-position: 600px;
+  }
+  100%{
+    background-position: 600px;
+  }
+}
+.text-center{
+  margin-top: 100px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+}
+.card-body1{
+  display:flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+}
+
+.container{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.card{
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.speciality{
+  background-color: rgb(245, 236, 245);
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+button{
+  background-color: rgb(173, 66, 168);
+  color:white;
+  padding:  10px 20px ;
+  border: none;
+  border-radius: 10px;
+}

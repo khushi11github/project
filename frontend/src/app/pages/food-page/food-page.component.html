@@ -1,0 +1,32 @@
+
+<app-header></app-header>
+<div class="container">
+
+  <img src="{{food.imageUrl}}" alt="{{food.name}}" />
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{food.name}}
+      </span>
+
+    </div>
+    <div class="origin">
+      <span *ngFor="let origin of food.origins">
+        {{origin}}
+      </span>
+    </div>
+    <div class="tags">
+      <a *ngFor="let tag of food.tags" routerLink="/tag/{{tag}}">{{tag}}</a>
+    </div>
+
+    <div class="price">
+      <span>
+        {{food.price | currency}}
+      </span>
+    </div>
+    <button  (click)="addToCart()">Add to Cart</button>
+  </div>
+</div>
+
+<app-footer>
+</app-footer>

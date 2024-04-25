@@ -1,0 +1,60 @@
+.row{
+  display:flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.card:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  transform: scale(1.1);
+  transition: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+.card{
+
+
+  height:280px;
+  width:280px;
+  object-fit: fill;
+  height: 290px;
+
+
+
+}
+
+
+
+.origins{
+  flex:9;
+}
+.origins span{
+  border-radius:2rem;
+  background-color: rgb(232, 201, 234);
+  display: inline-block;
+  font-size: 0.8rem;
+  color: rgb(17, 17, 11);
+  margin-right: 0.3 rem;
+  padding: 0 0.5rem;
+  margin-top: 0.2 rem;
+
+
+
+}
+#repeat{
+  margin-bottom:15px;
+  margin-top:40px;
+  height:300px;
+
+
+
+}
+
+.card-img-top{
+  height:150px;
+  width:100%;
+  object-fit: fill;
+
+}

@@ -1,0 +1,25 @@
+#win{
+  background-image: url("https://source.unsplash.com/random/?clouds&1");
+
+}
+
+div{
+  background-repeat: no-repeat;
+background-size: cover;
+}
+.para{
+  font-size: medium;
+  margin-top: 10px;
+  margin-bottom: 100x;
+  margin-left: 100px;
+  margin-right: 100px;
+  border:2px solid purple;
+  text-indent: 50px;;
+  z-index: 1;
+}
+.para2{
+z-index: 1;
+padding: 8rem;
+
+}
+

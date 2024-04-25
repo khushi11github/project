@@ -1,0 +1,48 @@
+<div class="navbar">
+  <div class="nav-logo">
+    <img class="img" src="../../../assets/IMAGES/logo3.png" alt="Logo" />
+  </div>
+  <div class="nav-items">
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active" ariaCurrectWhenActive="page">Home</a></li>
+      <li><a routerLink="/menu" routerLinkActive="active" ariaCurrectWhenActive="page">Menu</a></li>
+
+
+
+      <li>
+      <li><a routerLink="/cart-page" routerLinkActive="active" ariaCurrectWhenActive="page">Your cart</a></li>
+      <li *ngIf="!user.token">
+        <a routerLink="/login" routerLinkActive="active" ariaCurrectWhenActive="page">login</a>
+      </li>
+      <li><a routerLink="/login" routerLinkActive="active" ariaCurrectWhenActive="page">{{user.name}}</a></li>
+      <li *ngIf="user.token">
+        <a (click)="logout()">Logout</a>
+      </li>
+      <li><a routerLink="/about" routerLinkActive="active" ariaCurrectWhenActive="page">About us</a></li>
+    </ul>
+  </div>
+  <div class="nav-button">
+    <div class="anim-layer"></div>
+    <a routerLink="/register">Sign Up</a>
+  </div>
+  <div id="hamburger-menu">&#9776;</div>
+</div>
+
+<div id="mobile-menu">
+  <div class="mobile-nav-items">
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active" ariaCurrectWhenActive="page">Home</a></li>
+      <li><a routerLink="/menur" routerLinkActive="active" ariaCurrectWhenActive="page">Order</a></li>
+      <li><a routerLink="/login" routerLinkActive="active" ariaCurrectWhenActive="page">Login</a></li>
+      <li><a routerLink="/bookseats" routerLinkActive="active" ariaCurrectWhenActive="page">Book seats</a>
+      <li>
+      <li><a routerLink="/cart-page" routerLinkActive="active" ariaCurrectWhenActive="page">cart</a></li>
+
+    </ul>
+  </div>
+  <div class="mobile-nav-button">
+    <div class="anim-layer"></div>
+    <a href="#">Sign Up</a>
+  </div>
+  <div id="hamburger-cross">&#10006;</div>
+</div>
